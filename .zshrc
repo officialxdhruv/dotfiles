@@ -76,3 +76,7 @@ alias c='clear'
 eval "$(fzf --zsh)"
 eval "$(uv generate-shell-completion zsh)"
 eval "$(zoxide init --cmd cd zsh)"
+
+export PATH="/opt/homebrew/opt/node@24/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/node@24/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/node@24/include"
